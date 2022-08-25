@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CollisionAvoidance version="1.0" xmlns="urn:abb-robotics-collisionavoidance">
+  <Object name="Cell_Back_Wall" type="Zone">
+    <Geometry file="Cell_Back_Wall.xml" />
+    <HomePose t="-0.457 -0.737 0.15" quat="1 0 0 0" />
+  </Object>
+  <Object name="Gripper_Primitive" type="Part">
+    <Geometry file="Gripper_Primitive.xml" />
+    <HomePose t="-0.096862 -0.432458 0.828762" quat="0.008795 0.773156 0.634141 0.004205" />
+    <Attachment mechUnit="ROB_1" frameNumber="6">
+      <Offset t="0 -0.07 0.08" quat="0.707107 0 0.707107 0" />
+    </Attachment>
+  </Object>
+  <Object name="Cell_Left_Wall" type="Zone">
+    <Geometry file="Cell_Left_Wall.xml" />
+    <HomePose t="-0.4445 -0.745 0.15" quat="1 0 0 0" />
+  </Object>
+  <Object name="Cell_Right_Wall" type="Zone">
+    <Geometry file="Cell_Right_Wall.xml" />
+    <HomePose t="-0.4445 0.71 0.15" quat="0.707107 0 0 -0.707107" />
+  </Object>
+  <Object name="Cell_Front_Wall" type="Zone">
+    <Geometry file="Cell_Front_Wall.xml" />
+    <HomePose t="0.4445 -0.7365 0.15" quat="1 0 0 0" />
+  </Object>
+  <Object name="Cell_Ceiling_Wall" type="Zone">
+    <Geometry file="Cell_Ceiling_Wall.xml" />
+    <HomePose t="-0.444 -0.7365 1.1" quat="1 0 0 0" />
+  </Object>
+  <Object name="Cell_Camera_Zone" type="Zone">
+    <Geometry file="Cell_Camera_Zone.xml" />
+    <HomePose t="-0.4445 -0.875 0.95" quat="1 0 0 0" />
+  </Object>
+</CollisionAvoidance>
